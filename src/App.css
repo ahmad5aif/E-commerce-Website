@@ -42,35 +42,10 @@
 } */
 /* ==================ABOVE DEFAULT VITE CSS=================== */
 
-/* #root {
-  background-color: whitesmoke;
-} */
-/* 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 body {
-  margin: 0;
-  padding: 0 5rem;
+  font-family: "Open Sans", sans-serif;
 }
-
-@media (min-width: 640px) {
-  body {
-    padding: 0 5rem;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    padding: 0 5rem;
-  }
-}
-@media (min-width: 1024px) {
-  body {
-    padding: 0 5rem;
-  }
-}
-
-nav {
-  padding: 0;
-} */
-
 .animate {
   animation: animate 20s linear;
 }
@@ -81,27 +56,5 @@ nav {
   }
   to {
     transform: opacity(1);
-  }
-}
-
-.loading:after {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4, end) 1900ms infinite;
-  animation: ellipsis steps(4, end) 1900ms infinite;
-  content: "\2026";
-  width: 0px;
-}
-
-@keyframes ellipsis {
-  to {
-    width: 20px;
-  }
-}
-
-@-webkit-keyframes ellipsis {
-  to {
-    width: 20px;
   }
 }

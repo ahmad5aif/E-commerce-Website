@@ -100,7 +100,7 @@ const Product = () => {
       <div className="flex sm:flex-row flex-col sm:gap-5">
         <div className="sm:w-1/2 md:max-h-max rounded-lg bg-gray-100">
           <img
-            className="object-cover object-center h-full w-full"
+            className="object-cover object-center h-full w-full rounded-lg"
             src={item.imgUrl}
             alt={item.name}
           />

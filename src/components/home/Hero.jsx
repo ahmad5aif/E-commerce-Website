@@ -9,7 +9,7 @@ function Hero() {
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-start ">
             Premium Phones
             <p className="text-4xl font-bold tracking-tight text-red-500 sm:text-6xl text-start mt-2">
-              your way
+              Your way
             </p>
           </h1>
           <p className="mt-4 text-base text-gray-800">
@@ -19,7 +19,7 @@ function Hero() {
 
           <Link
             to="/shop"
-            className="inline-block w-full sm:w-auto rounded-md border border-transparent bg-red-500 px-8 py-3 mt-5 text-center font-medium text-white hover:drop-shadow-xl transition ease-in-out hover:scale-105 hover:bg-red-600"
+            className="inline-block w-full sm:w-1/2 rounded-md border border-transparent bg-red-500 px-8 py-3 mt-5 text-center font-medium text-white hover:drop-shadow-xl transition ease-in-out hover:scale-105 hover:bg-red-600"
           >
             Shop Now
           </Link>

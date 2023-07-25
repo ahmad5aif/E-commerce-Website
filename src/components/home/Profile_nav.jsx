@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { account } from "../../appwrite/service";
-import Loading from "../Loading";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { isLogin } from "../../hooks/loginSlice";
@@ -11,17 +10,12 @@ const Profile_nav = ({ user, setOpenProfile }) => {
     return state.login;
   });
 
-  const [loading, setLoding] = useState(false);
-
   const navigate = useNavigate();
 
   const handleLogout = async (e) => {
     e.preventDefault();
-    setLoding(true);
     try {
       await account.deleteSession("current");
-      console.log("deleted");
-      setLoding(false);
       dispatch(isLogin(false));
     } catch (error) {
       console.log(error);
@@ -109,7 +103,6 @@ const Profile_nav = ({ user, setOpenProfile }) => {
           </button>
         </div>
       </div>
-      {loading === true && <Loading />}
     </>
   );
 };
